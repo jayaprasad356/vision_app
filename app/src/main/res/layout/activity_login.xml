@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".activities.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/doticon"
+        android:layout_margin="@dimen/_10sdp"
+        app:tint="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@drawable/app_logo" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone No"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/EtPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ed_bg"
+                android:hint="Phone"
+                android:inputType="number"
+                android:maxLength="15"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/_12sdp">
+
+
+            </EditText>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Password"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/EtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ed_bg"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:text="Forgot Password"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+        <!-- checkbox starts here -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkTerms"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:buttonTint="@color/white"
+                android:checked="true"
+
+
+                />
+
+            <TextView
+                android:id="@+id/tvTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="@string/terms"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8sdp" />
+
+
+        </LinearLayout>
+        <!-- ends here -->
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@color/primaryLightColor"
+            android:padding="@dimen/_10sdp"
+            android:text="Sign in"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@color/yellow"
+            android:padding="@dimen/_10sdp"
+            android:text="Create new account"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@color/yellow"
+            android:padding="@dimen/_10sdp"
+            android:text="send"
+            android:visibility="gone"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/receive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginHorizontal="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@color/yellow"
+            android:padding="@dimen/_10sdp"
+            android:text=""
+            android:textAllCaps="false" />
+        <TextView
+            android:id="@+id/tvMakePayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="@string/make_payment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/whatsppjoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/whatsapp" />
+
+            <Space
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Whatsapp us"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvcustomerCare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primaryLightColor"
+            android:layout_centerHorizontal="true"
+            android:text="Customer Care : +91 837238328"
+            android:layout_margin="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

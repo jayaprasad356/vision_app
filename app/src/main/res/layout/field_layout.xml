@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- field_layout.xml -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fieldTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vihdldrthmqw"
+                android:textAllCaps="true"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/fieldCopyButton"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/fieldTitle"
+                android:background="@drawable/ic_baseline_content_copy_24"
+                android:backgroundTint="@color/white" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:paddingVertical="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:background="@drawable/ed_bg"
+                android:layout_weight="1.5"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fieldName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:hint="Enter Name"
+                    android:inputType="textVisiblePassword"
+                    android:longClickable="false" />
+
+                <ImageButton
+                    android:visibility="invisible"
+                    android:id="@+id/fieldPasteButton"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_baseline_content_paste_24"
+                    android:backgroundTint="@color/black" />
+
+                <ImageButton
+                    android:layout_alignParentRight="true"
+                    android:visibility="invisible"
+                    android:layout_gravity="center"
+                    android:id="@+id/fieldSpeakButton"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:background="@drawable/ic_baseline_volume_up_24"
+                    android:backgroundTint="@color/black" />
+            </RelativeLayout>
+
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/fieldConvertButton"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="convert"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8sdp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:backgroundTint="@color/red" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

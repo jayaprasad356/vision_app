@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlMain"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.LinksRewardFragment">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/tvText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/primaryColor"
+            android:textSize="@dimen/_14sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tvText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/green"
+            android:textSize="@dimen/_14sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:textStyle="bold"
+            />
+            <LinearLayout
+                android:id="@+id/llReward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:layout_alignParentRight="true"
+                >
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:background="@drawable/reward_img"
+                    android:layout_gravity="center"
+                    />
+
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rewards"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/primaryColor"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvOurLiveDashboard"
+        android:layout_below="@+id/rl1"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical">
+
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Complete Job Details"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="@dimen/_18sdp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:layout_marginTop="@dimen/_20sdp"-->
+        <!--            />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <Button
+                android:id="@+id/btnCompledJobDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Complete Job Detail" />
+
+            <Button
+                android:id="@+id/btnInformationVideos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:text="Information Videos" />
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCompledJobDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvImformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/tvOurLiveDashboard1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvOurLiveDashboard"
+        android:layout_centerInParent="true"
+        android:text="Our Live Dashboard"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+
+    <TextView
+        android:id="@+id/tvOurLiveDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:visibility="gone"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:text="https://dashboard.abcdapp.in"
+        android:textColor="@color/primaryColor"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.gms.ads.AdView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        android:layout_gravity="center"
+        app:adUnitId="ca-app-pub-7994561209093816/3028557167"/>
+
+
+
+</RelativeLayout>

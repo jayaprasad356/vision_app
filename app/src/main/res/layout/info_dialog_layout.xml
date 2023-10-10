@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Why do I have to purchase a server?"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No website or app will run without a server. Here are some reasons why you need a server:\n\n1. You need a server to upload your database.\n\n2. Generated QR code images will be stored in server storage.\n\n3. Your app can respond to all activities only with the help of a server.\n\n4. All your work-related details and earnings will be saved on the server."
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

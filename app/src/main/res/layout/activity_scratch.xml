@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".activities.ScratchActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_300sdp"
+        android:background="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        android:layout_centerInParent="true"
+       >
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/app_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Database Price Discount Amount"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/_32sdp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+             />
+            <TextView
+                android:id="@+id/tvVocherid"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="#1206"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.anupkumarpanwar.scratchview.ScratchView
+            android:id="@+id/scratchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:overlay_image="@drawable/overlay_first"
+           />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:textAllCaps="false"
+        />
+
+</RelativeLayout>

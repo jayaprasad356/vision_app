@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.WatchAdsFragment"
+    android:background="@drawable/bg"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_baseline_notifications_24" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/primaryColor"
+                >
+
+                <LinearLayout
+                    android:id="@+id/l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_stroke"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/lTrial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/tvTrialPeriod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:padding="@dimen/_1sdp"
+                            android:text="Watch Ads to get codes"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold"
+                             />
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_90sdp"
+                                android:layout_alignParentEnd="true"
+                                android:orientation="vertical">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:layout_gravity="center_horizontal">
+
+                                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                                        android:id="@+id/cbTrail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerInParent="true"
+                                        android:layout_gravity="center_horizontal"
+                                        app:indicatorColor="@color/secondaryColor"
+                                        app:indicatorSize="@dimen/_40sdp"
+                                        app:trackColor="@color/white"
+                                        app:trackCornerRadius="@dimen/_12sdp"
+                                        app:trackThickness="@dimen/_6sdp" />
+
+                                    <ImageView
+                                        android:id="@+id/ivInfo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/info" />
+
+
+
+
+                                </RelativeLayout>
+
+                                <Button
+                                    android:id="@+id/btnBuyServer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:backgroundTint="@color/secondaryColor"
+                                    android:text="Purchase Database"
+                                    android:textAllCaps="false"
+                                    android:textSize="@dimen/_12sdp" />
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+                    <VideoView
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:id="@+id/videoView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_140sdp" />
+
+
+
+
+                    <Button
+                        android:id="@+id/btnGenerate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginVertical="@dimen/_20sdp"
+                        android:backgroundTint="@color/primaryLightColor"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Generate"
+                        android:visibility="invisible"
+                        android:textSize="@dimen/_20sdp" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

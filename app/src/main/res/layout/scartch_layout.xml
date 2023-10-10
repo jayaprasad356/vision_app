@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="@dimen/_10sdp"
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/_10sdp"
+        >
+
+
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:orientation="vertical"
+      >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/app_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Database Price Discount Amount"
+            android:textColor="@color/gray"
+             />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Rs.200"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Valid till - 2023-06-03"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/tvVocherid"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/primaryColor"
+            android:text="#1206"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/overlay_first"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</RelativeLayout>
