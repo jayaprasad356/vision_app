@@ -1,15 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/_5sdp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_rectangle"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5sdp"
+        android:background="@drawable/shape_rectangle"
+        />
+
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5sdp"
+        android:background="@drawable/shape_rectangle"
+        />
+
+    <RelativeLayout
+        android:layout_width="@dimen/_5sdp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_rectangle"
+        android:layout_gravity="right"
+        />
 
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/wallet_list_bg"
         android:paddingVertical="@dimen/_14sdp"
         >
 
@@ -21,16 +48,18 @@
             android:id="@+id/ivRupeesimple"
             android:layout_width="@dimen/_35sdp"
             android:layout_height="@dimen/_35sdp"
-            android:backgroundTint="@color/primaryLightColor"
+            android:backgroundTint="@color/newpink"
             android:layout_marginHorizontal="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
             >
+
+
 
 
             <ImageView
                 android:layout_width="@dimen/_18sdp"
                 android:layout_height="@dimen/_20sdp"
-                android:background="@drawable/ic_rupee_symbol_black"
-                android:backgroundTint="@color/white"
+                android:background="@drawable/rupee"
                 android:layout_gravity="center"
                 />
 
@@ -52,7 +81,7 @@
                 android:layout_height="wrap_content"
                 tools:text="Amount Credited For Qr Code"
                 android:textStyle="bold"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="@dimen/_12sdp"
                 />
 
@@ -61,7 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="12-11-2022 | 11:34:50 AM"
-                android:textColor="@color/white"
+                android:textColor="@color/newpink"
                 android:textSize="@dimen/_8sdp"
 
                 />
@@ -88,4 +117,4 @@
     </RelativeLayout>
 
 
-</RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

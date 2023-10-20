@@ -50,7 +50,7 @@ public class WithdrawalActivity extends AppCompatActivity {
     RedeemedAdapter redeemedAdapter;
     Activity activity;
     Button btnUpdateBank,btnWithdrawal;
-    TextView tvBalance,tvminiwithdrawal;
+    TextView tvBalance;
     Session session;
     EditText etAmount;
     String withdrawal_type = "";
@@ -71,7 +71,7 @@ public class WithdrawalActivity extends AppCompatActivity {
         tvBalance = findViewById(R.id.tvBalance);
         btnWithdrawal = findViewById(R.id.btnWithdrawal);
         etAmount = findViewById(R.id.etAmount);
-        tvminiwithdrawal = findViewById(R.id.tvminiwithdrawal);
+//        tvminiwithdrawal = findViewById(R.id.tvminiwithdrawal);
 
         tvCodeBalance = findViewById(R.id.tvCodeBalance);
 

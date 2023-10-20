@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.abcdapp.R;
@@ -93,11 +94,17 @@ public class LevelsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         }
 
 
+
         if (session.getData(Constant.LEVEL).equals(level.getLevel())){
-            holder.cvLevel.setCardBackgroundColor(Color.parseColor("#f3c234"));
+            int color = ContextCompat.getColor(activity, R.color.newpink);
+            holder.cvLevel.setCardBackgroundColor(color);
+
 
         }else {
-            holder.cvLevel.setCardBackgroundColor(Color.parseColor("#a9a9a9"));
+            int color = ContextCompat.getColor(activity, in.aabhasjindal.otptextview.R.color.grey);
+            holder.cvLevel.setCardBackgroundColor(color);
+
+
         }
         holder.cvLevel.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -70,6 +70,14 @@
     <color name="grey_10">#e6e6e6</color>
 
 
+    <color name="neworage">#EF7546</color>
+    <color name="newpink">#eb356f</color>
+    <color name="newpurple">#7844e3</color>
+    <color name="newblue">#4A88f7</color>
+    <color name="newyellow">#f6bf44</color>
+    <color name="newvoliet">#0024A3</color>
+
+
     <color name="colorAccent">#2196F3</color>
     <color name="colorBlack">#000000</color>
 

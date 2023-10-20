@@ -12,16 +12,18 @@
         android:layout_height="match_parent"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:background="@drawable/bg"
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_50sdp"
         android:layout_alignParentBottom="true"
         app:elevation="@dimen/_7sdp"
         app:itemIconSize="@dimen/_25sdp"
-        app:itemRippleColor="@color/primaryColor"
-        app:itemTextColor="@color/primaryColor"
+        app:itemRippleColor="@color/white"
         app:labelVisibilityMode="selected"
-        app:menu="@menu/homescreenmenu"></com.google.android.material.bottomnavigation.BottomNavigationView>
+        app:itemIconTint="@drawable/selected_item_color"
+        app:itemTextColor="@drawable/selected_item_color"
+        app:menu="@menu/homescreenmenu"/>
 
 
 

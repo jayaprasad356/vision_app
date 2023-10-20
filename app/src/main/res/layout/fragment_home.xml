@@ -36,9 +36,8 @@
                 android:text="@string/app_name"
                 android:textColor="@color/white"
                 android:textIsSelectable="false"
-                android:textSize="@dimen/_14sdp"
+                android:textSize="@dimen/_20sdp"
                 android:textStyle="bold" />
-
 
 
             <ImageView
@@ -46,7 +45,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:src="@drawable/ic_baseline_notifications_24" />
+                android:background="@drawable/ic_notify_new"
+                android:backgroundTint="@color/white"
+
+                />
 
         </RelativeLayout>
 
@@ -223,7 +225,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
-                                    app:indicatorColor="@color/secondaryColor"
+                                    app:indicatorColor="@color/newvoliet"
                                     app:indicatorSize="@dimen/_80sdp"
                                     app:trackColor="@color/white"
                                     app:trackCornerRadius="@dimen/_12sdp"
@@ -784,7 +786,7 @@
                                 android:text="vihdldrthmqw"
                                 android:layout_gravity="center"
                                 android:textAllCaps="true"
-                                android:textColor="@color/textcolor"
+                                android:textColor="@color/newpurple"
                                 android:textSize="@dimen/_16sdp"
                                 android:textStyle="bold" />
 
@@ -802,8 +804,7 @@
                                 android:textAllCaps="false"
                                 android:layout_marginLeft="@dimen/_5sdp"
                                 android:padding="@dimen/_8sdp"
-                                android:background="@drawable/leave_corner"
-                                android:backgroundTint="@color/red"
+                                android:background="@drawable/btn_bg"
                                 />
 
 
@@ -818,8 +819,7 @@
                                 android:textAllCaps="false"
                                 android:layout_marginLeft="@dimen/_5sdp"
                                 android:padding="@dimen/_8sdp"
-                                android:background="@drawable/leave_corner"
-                                android:backgroundTint="@color/red"
+                                android:background="@drawable/btn_bg"
                                 />
 
                             <ImageButton
@@ -840,8 +840,7 @@
                                 android:layout_height="@dimen/_24sdp"
                                 android:layout_alignParentRight="true"
                                 android:layout_gravity="center"
-                                android:background="@drawable/ic_baseline_volume_up_24"
-                                android:backgroundTint="@color/black"
+                                android:background="@drawable/volume"
                                  />
 
 
@@ -859,19 +858,18 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="Paste English"
-                                android:textColor="@color/black"
-                                android:padding="@dimen/_10sdp" />
+                                android:padding="@dimen/_10sdp"
+                                android:textColor="@color/black" />
 
                             <ImageButton
                                 android:id="@+id/ibPaste1"
                                 android:layout_width="@dimen/_24sdp"
                                 android:layout_height="@dimen/_24sdp"
                                 android:layout_alignParentRight="true"
-                                android:layout_gravity="center"
-                                android:background="@drawable/ic_baseline_content_paste_24"
-                                android:backgroundTint="@color/black"
-                                android:layout_marginRight="@dimen/_10sdp"
                                 android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:background="@drawable/paste"
                                 />
 
 
@@ -910,7 +908,7 @@
                                 android:text="vihdldrthmqw"
                                 android:layout_gravity="center"
                                 android:textAllCaps="true"
-                                android:textColor="@color/textcolor"
+                                android:textColor="@color/newpurple"
                                 android:textSize="@dimen/_16sdp"
                                 android:textStyle="bold" />
 
@@ -928,8 +926,7 @@
                                 android:textAllCaps="false"
                                 android:layout_marginLeft="@dimen/_5sdp"
                                 android:padding="@dimen/_8sdp"
-                                android:background="@drawable/leave_corner"
-                                android:backgroundTint="@color/red"
+                                android:background="@drawable/btn_bg"
                                 />
 
 
@@ -944,8 +941,7 @@
                                 android:textAllCaps="false"
                                 android:layout_marginLeft="@dimen/_5sdp"
                                 android:padding="@dimen/_8sdp"
-                                android:background="@drawable/leave_corner"
-                                android:backgroundTint="@color/red"
+                                android:background="@drawable/btn_bg"
                                 />
 
                             <ImageButton
@@ -966,8 +962,8 @@
                                 android:layout_height="@dimen/_24sdp"
                                 android:layout_alignParentRight="true"
                                 android:layout_gravity="center"
-                                android:background="@drawable/ic_baseline_volume_up_24"
-                                android:backgroundTint="@color/black"
+                                android:background="@drawable/volume"
+
                                  />
 
 
@@ -985,20 +981,19 @@
                                 android:id="@+id/tvPaste2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="Paste English"
-                                android:textColor="@color/black"
-                                android:padding="@dimen/_10sdp" />
+                                android:hint="Paste Hindi"
+                                android:padding="@dimen/_10sdp"
+                                android:textColor="@color/black" />
 
                             <ImageButton
                                 android:id="@+id/ibPaste2"
                                 android:layout_width="@dimen/_24sdp"
                                 android:layout_height="@dimen/_24sdp"
                                 android:layout_alignParentRight="true"
-                                android:layout_gravity="center"
-                                android:background="@drawable/ic_baseline_content_paste_24"
-                                android:backgroundTint="@color/black"
-                                android:layout_marginRight="@dimen/_10sdp"
                                 android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:background="@drawable/paste"
                                 />
 
 
@@ -1033,7 +1028,7 @@
                                 android:text="vihdldrthmqw"
                                 android:layout_gravity="center"
                                 android:textAllCaps="true"
-                                android:textColor="@color/textcolor"
+                                android:textColor="@color/newpurple"
                                 android:textSize="@dimen/_16sdp"
                                 android:textStyle="bold" />
 
@@ -1051,8 +1046,7 @@
                                 android:textAllCaps="false"
                                 android:layout_marginLeft="@dimen/_5sdp"
                                 android:padding="@dimen/_8sdp"
-                                android:background="@drawable/leave_corner"
-                                android:backgroundTint="@color/red"
+                                android:background="@drawable/btn_bg"
                                 />
 
 
@@ -1067,8 +1061,7 @@
                                 android:textAllCaps="false"
                                 android:layout_marginLeft="@dimen/_5sdp"
                                 android:padding="@dimen/_8sdp"
-                                android:background="@drawable/leave_corner"
-                                android:backgroundTint="@color/red"
+                                android:background="@drawable/btn_bg"
                                 />
 
                             <ImageButton
@@ -1089,8 +1082,7 @@
                                 android:layout_height="@dimen/_24sdp"
                                 android:layout_alignParentRight="true"
                                 android:layout_gravity="center"
-                                android:background="@drawable/ic_baseline_volume_up_24"
-                                android:backgroundTint="@color/black"
+                                android:background="@drawable/volume"
                                  />
 
 
@@ -1108,21 +1100,20 @@
                                 android:id="@+id/tvPaste3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="Paste English"
-                                android:textColor="@color/black"
-                                android:padding="@dimen/_10sdp" />
+                                android:hint="Paste Kannada"
+                                android:padding="@dimen/_10sdp"
+                                android:textColor="@color/black" />
 
                             <ImageButton
                                 android:id="@+id/ibPaste3"
                                 android:layout_width="@dimen/_24sdp"
                                 android:layout_height="@dimen/_24sdp"
                                 android:layout_alignParentRight="true"
-                                android:layout_gravity="center"
-                                android:background="@drawable/ic_baseline_content_paste_24"
-                                android:backgroundTint="@color/black"
-                                android:layout_marginRight="@dimen/_10sdp"
                                 android:layout_centerVertical="true"
-                                />
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                                                android:background="@drawable/paste"
+ />
 
 
                         </RelativeLayout>
@@ -1155,7 +1146,7 @@
                                 android:text="vihdldrthmqw"
                                 android:layout_gravity="center"
                                 android:textAllCaps="true"
-                                android:textColor="@color/textcolor"
+                                android:textColor="@color/newpurple"
                                 android:textSize="@dimen/_16sdp"
                                 android:textStyle="bold" />
 
@@ -1173,8 +1164,7 @@
                                 android:textAllCaps="false"
                                 android:layout_marginLeft="@dimen/_5sdp"
                                 android:padding="@dimen/_8sdp"
-                                android:background="@drawable/leave_corner"
-                                android:backgroundTint="@color/red"
+                                android:background="@drawable/btn_bg"
                                 />
 
 
@@ -1189,8 +1179,7 @@
                                 android:textAllCaps="false"
                                 android:layout_marginLeft="@dimen/_5sdp"
                                 android:padding="@dimen/_8sdp"
-                                android:background="@drawable/leave_corner"
-                                android:backgroundTint="@color/red"
+                                android:background="@drawable/btn_bg"
                                 />
 
                             <ImageButton
@@ -1211,8 +1200,7 @@
                                 android:layout_height="@dimen/_24sdp"
                                 android:layout_alignParentRight="true"
                                 android:layout_gravity="center"
-                                android:background="@drawable/ic_baseline_volume_up_24"
-                                android:backgroundTint="@color/black"
+                                android:background="@drawable/volume"
                                  />
 
 
@@ -1230,9 +1218,9 @@
                                 android:id="@+id/tvPaste4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="Paste English"
-                                android:textColor="@color/black"
-                                android:padding="@dimen/_10sdp" />
+                                android:hint="Paste Tamil"
+                                android:padding="@dimen/_10sdp"
+                                android:textColor="@color/black" />
 
                             <ImageButton
                                 android:id="@+id/ibPaste4"
@@ -1240,8 +1228,8 @@
                                 android:layout_height="@dimen/_24sdp"
                                 android:layout_alignParentRight="true"
                                 android:layout_gravity="center"
-                                android:background="@drawable/ic_baseline_content_paste_24"
-                                android:backgroundTint="@color/black"
+                                                                android:background="@drawable/paste"
+
                                 android:layout_marginRight="@dimen/_10sdp"
                                 android:layout_centerVertical="true"
                                 />
@@ -1277,7 +1265,7 @@
                                 android:text="vihdldrthmqw"
                                 android:layout_gravity="center"
                                 android:textAllCaps="true"
-                                android:textColor="@color/textcolor"
+                                android:textColor="@color/newpurple"
                                 android:textSize="@dimen/_16sdp"
                                 android:textStyle="bold" />
 
@@ -1295,8 +1283,7 @@
                                 android:textAllCaps="false"
                                 android:layout_marginLeft="@dimen/_5sdp"
                                 android:padding="@dimen/_8sdp"
-                                android:background="@drawable/leave_corner"
-                                android:backgroundTint="@color/red"
+                                android:background="@drawable/btn_bg"
                                 />
 
 
@@ -1311,8 +1298,7 @@
                                 android:textAllCaps="false"
                                 android:layout_marginLeft="@dimen/_5sdp"
                                 android:padding="@dimen/_8sdp"
-                                android:background="@drawable/leave_corner"
-                                android:backgroundTint="@color/red"
+                                android:background="@drawable/btn_bg"
                                 />
 
                             <ImageButton
@@ -1333,8 +1319,8 @@
                                 android:layout_height="@dimen/_24sdp"
                                 android:layout_alignParentRight="true"
                                 android:layout_gravity="center"
-                                android:background="@drawable/ic_baseline_volume_up_24"
-                                android:backgroundTint="@color/black"
+                                android:background="@drawable/volume"
+
                                  />
 
 
@@ -1352,7 +1338,7 @@
                                 android:id="@+id/tvPaste5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="Paste English"
+                                android:hint="Paste Telugu"
                                 android:textColor="@color/black"
                                 android:padding="@dimen/_10sdp" />
 
@@ -1362,8 +1348,8 @@
                                 android:layout_height="@dimen/_24sdp"
                                 android:layout_alignParentRight="true"
                                 android:layout_gravity="center"
-                                android:background="@drawable/ic_baseline_content_paste_24"
-                                android:backgroundTint="@color/black"
+                                                                android:background="@drawable/paste"
+
                                 android:layout_marginRight="@dimen/_10sdp"
                                 android:layout_centerVertical="true"
                                 />
@@ -1401,10 +1387,11 @@
                         android:layout_alignParentBottom="true"
                         android:layout_marginHorizontal="@dimen/_20sdp"
                         android:layout_marginVertical="@dimen/_20sdp"
-                        android:backgroundTint="@color/primaryLightColor"
-                        android:padding="@dimen/_10sdp"
+                        android:backgroundTint="@color/newvoliet"
+                        android:padding="@dimen/_8sdp"
+                        android:textColor="@color/white"
                         android:text="Submit"
-                        android:textSize="@dimen/_20sdp" />
+                        android:textSize="@dimen/_16sdp" />
 
 
                 </LinearLayout>

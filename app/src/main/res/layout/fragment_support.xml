@@ -3,14 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".fragment.SupportFragment">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/btn_bg"
         android:id="@+id/btnChatSupport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chat Support"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="Chat Support" />
     <TextView
         android:id="@+id/tvcustomerCare"
         android:layout_below="@+id/btnChatSupport"
@@ -20,18 +25,17 @@
         android:layout_centerHorizontal="true"
         android:text="Customer Support Number : +91 837238328"
         android:layout_margin="@dimen/_10sdp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="@dimen/_13sdp" />
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_below="@+id/tvcustomerCare"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/tvcustomerCare"
         android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
         android:layout_marginTop="10dp"
-        />
+        android:layout_marginEnd="5dp" />
 
 </RelativeLayout>

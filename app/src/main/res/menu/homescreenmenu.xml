@@ -3,25 +3,25 @@
 
     <item
         android:id="@+id/Profile"
-        android:icon="@drawable/ic_baseline_person_24"
+        android:icon="@drawable/ic_profile_new"
         android:title="profile"
         />
 
     <item
         android:id="@+id/Wallet"
-        android:icon="@drawable/ic_baseline_wallet_24"
+        android:icon="@drawable/ic_wallet_new"
         android:title="wallet" />
     <item
         android:id="@+id/Home"
-        android:icon="@drawable/ic_baseline_home_24"
+        android:icon="@drawable/ic_home_new"
         android:title="Home" />
 
     <item
         android:id="@+id/Support"
-        android:icon="@drawable/supp"
+        android:icon="@drawable/ic_support_new"
         android:title="Support"/>
     <item
         android:id="@+id/Explore"
-        android:icon="@drawable/gift"
+        android:icon="@drawable/ic_reward_new"
         android:title="Rewards"/>
 </menu>

@@ -122,7 +122,7 @@ public class ProfileFragment extends Fragment implements PopupMenu.OnMenuItemCli
 
 
         ImageView profileImageView = root.findViewById(R.id.profileImageView);
-        Drawable drawable = getResources().getDrawable(R.drawable.profile);
+        Drawable drawable = getResources().getDrawable(R.drawable.proficenew);
         Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
 
 // Define the desired width and height for the resized image
@@ -144,20 +144,7 @@ public class ProfileFragment extends Fragment implements PopupMenu.OnMenuItemCli
 
 
 
-        switchDarkMode.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    session.setData(Constant.THEME, "dark");
-                    setDarkMode();
 
-                } else {
-
-                    session.setData(Constant.THEME, "light");
-                    setLightMode();
-                }
-            }
-        });
 
 
 
@@ -258,29 +245,12 @@ public class ProfileFragment extends Fragment implements PopupMenu.OnMenuItemCli
             }
         });
 
-        if (session.getData(Constant.THEME).equals("dark")) {
-            setDarkMode();
-            switchDarkMode.setChecked(true);
-        } else {
-            setLightMode();
-            switchDarkMode.setChecked(false);
-        }
+
 
 
         return root;
     }
 
-    private void setLightMode() {
-
-        rl1.setBackgroundColor(Color.parseColor("#4d4a75"));
-        llReferCode.setBackgroundColor(Color.parseColor("#4d4a75"));
-    }
-
-    private void setDarkMode() {
-
-        rl1.setBackgroundColor(Color.parseColor("#2D2B2B"));
-        llReferCode.setBackgroundColor(Color.parseColor("#2D2B2B"));
-    }
 
     private void checkTrialEarnings()
     {

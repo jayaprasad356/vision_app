@@ -44,13 +44,10 @@
     </RelativeLayout>
 
 
-
-
-
     <ScrollView
-        android:layout_below="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
         android:layout_centerInParent="true"
         android:layout_marginHorizontal="@dimen/_20sdp">
 
@@ -62,9 +59,6 @@
             android:orientation="vertical"
 
             >
-
-
-
 
 
             <TextView
@@ -98,14 +92,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ed_bg"
+                android:enabled="false"
                 android:hint="Phone Number"
                 android:inputType="number"
                 android:maxLength="10"
-                android:enabled="false"
                 android:padding="@dimen/_10sdp"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_12sdp" />
-
 
 
             <TextView
@@ -194,17 +187,14 @@
                 android:textSize="@dimen/_12sdp" />
 
 
-
-
-
-
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/btn_bg"
                 android:id="@+id/btnUpdate"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginHorizontal="30dp"
                 android:layout_marginTop="20dp"
-                android:backgroundTint="@color/primaryLightColor"
+                android:textColor="@color/white"
                 android:text="Update" />
 
 

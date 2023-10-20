@@ -1,10 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- custom_dialog_layout.xml -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
+   >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/_5sdp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_rectangle"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5sdp"
+        android:background="@drawable/shape_rectangle"
+        />
+
+        <RelativeLayout
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp"
+            android:background="@drawable/shape_rectangle"
+            />
+
+        <RelativeLayout
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_rectangle"
+            android:layout_gravity="right"
+            />
+
+    <LinearLayout
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/newvoliet"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
 
     <TextView
         android:id="@+id/tvLevel"
@@ -12,7 +54,7 @@
         android:layout_height="wrap_content"
         android:text=""
         android:fontFamily="@font/roboto_medium"
-        android:textColor="@color/primaryColor"
+        android:textColor="@color/white"
         android:layout_gravity="center"
         android:textSize="@dimen/_18sdp"
         android:layout_marginBottom="@dimen/_20sdp"
@@ -22,7 +64,7 @@
         android:id="@+id/tvmembers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/yellow"
+        android:textColor="@color/newpink"
         android:textSize="@dimen/_14sdp"
         android:fontFamily="@font/roboto_medium"
         android:text="" />
@@ -32,7 +74,7 @@
         android:id="@+id/tvCodeRate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="@dimen/_14sdp"
         android:text="" />
 
@@ -41,7 +83,7 @@
         android:id="@+id/tvTodayCodes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="@dimen/_14sdp"
         android:text="" />
 
@@ -50,7 +92,7 @@
         android:id="@+id/tvLevelEarnings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="@dimen/_14sdp"
         android:text="" />
 
@@ -67,12 +109,14 @@
         android:layout_margin="@dimen/_5sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:fontFamily="@font/roboto_medium"
         android:textSize="@dimen/_12sdp"
         android:text="Click on the chat option and ask for more details." />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/btn_bg"
+        android:padding="@dimen/_5sdp"
         android:layout_gravity="center"
         android:id="@+id/dialogButton"
         android:layout_width="wrap_content"
@@ -81,4 +125,9 @@
         android:textColor="@color/white"
         android:text="Chat" />
 
-</LinearLayout>
+    </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

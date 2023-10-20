@@ -14,7 +14,35 @@
         android:backgroundTint="@color/grayLightColor"
         android:paddingVertical="@dimen/_14sdp"
         android:layout_margin="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
         >
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_rectangle"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp"
+            android:background="@drawable/shape_rectangle"
+            />
+
+        <RelativeLayout
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp"
+            android:background="@drawable/shape_rectangle"
+            />
+
+        <RelativeLayout
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_rectangle"
+            android:layout_gravity="right"
+            />
 
 
 
